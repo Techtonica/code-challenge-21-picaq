@@ -14,6 +14,11 @@
 
 function stringsplosion(s) {
   // implement
+  let splode = s[0];
+  for ( let i = 2 ; i <= s.length ; i++ ) {
+    splode = splode + s.slice(0, i);
+  }
+  return splode;
 }
 
 module.exports = stringsplosion;
